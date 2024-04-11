@@ -1,8 +1,8 @@
 import 'package:bmi_cal/constants/colors.dart';
 import 'package:flutter/material.dart';
 
-class ShapesLeft extends StatelessWidget {
-  ShapesLeft({super.key, required this.width});
+class LeftShape extends StatelessWidget {
+  const LeftShape({super.key, required this.width});
 
   final double width;
 
@@ -22,6 +22,11 @@ class ShapesLeft extends StatelessWidget {
             ),
           ),
         ),
+        const SizedBox(width: 10),
+        const Text(
+          'Positive index',
+          style: TextStyle(color: Colors.green),
+        )
       ],
     );
   }
